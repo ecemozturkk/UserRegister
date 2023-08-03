@@ -16,6 +16,7 @@
 		528EA92D2A781E37002F646B /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA92C2A781E37002F646B /* UserRegisterViewController.swift */; };
 		528EA92F2A781E3E002F646B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA92E2A781E3E002F646B /* UserDetailViewController.swift */; };
 		528EA9332A783047002F646B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9322A783047002F646B /* Users.swift */; };
+		52FDFAD72A7C100F001A5ABE /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FDFAD62A7C100F001A5ABE /* UsersTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		528EA92C2A781E37002F646B /* UserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
 		528EA92E2A781E3E002F646B /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		528EA9322A783047002F646B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		52FDFAD62A7C100F001A5ABE /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		528EA92A2A781E13002F646B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				52FDFAD52A7C0FD4001A5ABE /* TableView */,
 				528EA92B2A781E24002F646B /* Views */,
 			);
 			path = UI;
@@ -106,6 +109,14 @@
 				528EA9322A783047002F646B /* Users.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		52FDFAD52A7C0FD4001A5ABE /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				52FDFAD62A7C100F001A5ABE /* UsersTableViewCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 				528EA92D2A781E37002F646B /* UserRegisterViewController.swift in Sources */,
 				528EA92F2A781E3E002F646B /* UserDetailViewController.swift in Sources */,
 				528EA91B2A781DD4002F646B /* HomeViewController.swift in Sources */,
+				52FDFAD72A7C100F001A5ABE /* UsersTableViewCell.swift in Sources */,
 				528EA9172A781DD4002F646B /* AppDelegate.swift in Sources */,
 				528EA9332A783047002F646B /* Users.swift in Sources */,
 				528EA9192A781DD4002F646B /* SceneDelegate.swift in Sources */,
