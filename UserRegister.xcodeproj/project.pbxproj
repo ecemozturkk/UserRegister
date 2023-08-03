@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		528EA9172A781DD4002F646B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9162A781DD4002F646B /* AppDelegate.swift */; };
 		528EA9192A781DD4002F646B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9182A781DD4002F646B /* SceneDelegate.swift */; };
-		528EA91B2A781DD4002F646B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA91A2A781DD4002F646B /* ViewController.swift */; };
+		528EA91B2A781DD4002F646B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA91A2A781DD4002F646B /* HomeViewController.swift */; };
 		528EA91E2A781DD4002F646B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528EA91C2A781DD4002F646B /* Main.storyboard */; };
 		528EA9202A781DD6002F646B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528EA91F2A781DD6002F646B /* Assets.xcassets */; };
 		528EA9232A781DD6002F646B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528EA9212A781DD6002F646B /* LaunchScreen.storyboard */; };
+		528EA92D2A781E37002F646B /* UserRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA92C2A781E37002F646B /* UserRegisterViewController.swift */; };
+		528EA92F2A781E3E002F646B /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA92E2A781E3E002F646B /* UserDetailViewController.swift */; };
+		528EA9332A783047002F646B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9322A783047002F646B /* Users.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		528EA9132A781DD4002F646B /* UserRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528EA9162A781DD4002F646B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528EA9182A781DD4002F646B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		528EA91A2A781DD4002F646B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		528EA91A2A781DD4002F646B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		528EA91D2A781DD4002F646B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		528EA91F2A781DD6002F646B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528EA9222A781DD6002F646B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528EA9242A781DD6002F646B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528EA92C2A781E37002F646B /* UserRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterViewController.swift; sourceTree = "<group>"; };
+		528EA92E2A781E3E002F646B /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		528EA9322A783047002F646B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		528EA9152A781DD4002F646B /* UserRegister */ = {
 			isa = PBXGroup;
 			children = (
+				528EA9302A781E4A002F646B /* Data */,
+				528EA92A2A781E13002F646B /* UI */,
 				528EA9162A781DD4002F646B /* AppDelegate.swift */,
 				528EA9182A781DD4002F646B /* SceneDelegate.swift */,
-				528EA91A2A781DD4002F646B /* ViewController.swift */,
 				528EA91C2A781DD4002F646B /* Main.storyboard */,
 				528EA91F2A781DD6002F646B /* Assets.xcassets */,
 				528EA9212A781DD6002F646B /* LaunchScreen.storyboard */,
 				528EA9242A781DD6002F646B /* Info.plist */,
 			);
 			path = UserRegister;
+			sourceTree = "<group>";
+		};
+		528EA92A2A781E13002F646B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				528EA92B2A781E24002F646B /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		528EA92B2A781E24002F646B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				528EA91A2A781DD4002F646B /* HomeViewController.swift */,
+				528EA92C2A781E37002F646B /* UserRegisterViewController.swift */,
+				528EA92E2A781E3E002F646B /* UserDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		528EA9302A781E4A002F646B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				528EA9312A781E58002F646B /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		528EA9312A781E58002F646B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				528EA9322A783047002F646B /* Users.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				528EA91B2A781DD4002F646B /* ViewController.swift in Sources */,
+				528EA92D2A781E37002F646B /* UserRegisterViewController.swift in Sources */,
+				528EA92F2A781E3E002F646B /* UserDetailViewController.swift in Sources */,
+				528EA91B2A781DD4002F646B /* HomeViewController.swift in Sources */,
 				528EA9172A781DD4002F646B /* AppDelegate.swift in Sources */,
+				528EA9332A783047002F646B /* Users.swift in Sources */,
 				528EA9192A781DD4002F646B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
