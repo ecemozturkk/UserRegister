@@ -12,6 +12,8 @@ class UserDetailViewController: UIViewController {
     @IBOutlet weak var userNameLbl: UITextField!
     @IBOutlet weak var userPhoneLbl: UITextField!
     
+    var viewModel = UserDetailViewModel()
+    
     var kisi:Kisiler?
     
     override func viewDidLoad() {
@@ -26,12 +28,8 @@ class UserDetailViewController: UIViewController {
 
     @IBAction func updateButtonTapped(_ sender: Any) {
         if let ka = userNameLbl.text, let kt = userPhoneLbl.text, let k = kisi {
-            guncelle(kisi_id: k.kisi_id!, kisi_ad: ka, kisi_tel: kt)
+            viewModel.guncelle(kisi_id: k.kisi_id!, kisi_ad: ka, kisi_tel: kt)
         }
-    }
-    
-    func guncelle(kisi_id: Int, kisi_ad: String, kisi_tel:String){
-        print("Kişi güncelle: \(kisi_ad) , ")
     }
     
 

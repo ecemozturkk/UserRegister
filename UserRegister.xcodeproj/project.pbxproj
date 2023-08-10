@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522B0B6B2A8542C100680D2A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 522B0B6A2A8542C100680D2A /* RxSwift */; };
+		522B0B6E2A8543AC00680D2A /* UsersDaoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B6D2A8543AC00680D2A /* UsersDaoRepository.swift */; };
+		522B0B712A85441500680D2A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B702A85441500680D2A /* HomeViewModel.swift */; };
+		522B0B732A85442F00680D2A /* UserRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B722A85442F00680D2A /* UserRegisterViewModel.swift */; };
+		522B0B752A85444D00680D2A /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522B0B742A85444D00680D2A /* UserDetailViewModel.swift */; };
 		528EA9172A781DD4002F646B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9162A781DD4002F646B /* AppDelegate.swift */; };
 		528EA9192A781DD4002F646B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA9182A781DD4002F646B /* SceneDelegate.swift */; };
 		528EA91B2A781DD4002F646B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528EA91A2A781DD4002F646B /* HomeViewController.swift */; };
@@ -20,6 +25,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		522B0B6D2A8543AC00680D2A /* UsersDaoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDaoRepository.swift; sourceTree = "<group>"; };
+		522B0B702A85441500680D2A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		522B0B722A85442F00680D2A /* UserRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterViewModel.swift; sourceTree = "<group>"; };
+		522B0B742A85444D00680D2A /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		528EA9132A781DD4002F646B /* UserRegister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserRegister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		528EA9162A781DD4002F646B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		528EA9182A781DD4002F646B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +48,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522B0B6B2A8542C100680D2A /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522B0B6C2A85438400680D2A /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				522B0B6D2A8543AC00680D2A /* UsersDaoRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		522B0B6F2A8543E800680D2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				522B0B702A85441500680D2A /* HomeViewModel.swift */,
+				522B0B722A85442F00680D2A /* UserRegisterViewModel.swift */,
+				522B0B742A85444D00680D2A /* UserDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		528EA90A2A781DD4002F646B = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +107,7 @@
 		528EA92A2A781E13002F646B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				522B0B6F2A8543E800680D2A /* ViewModel */,
 				52FDFAD52A7C0FD4001A5ABE /* TableView */,
 				528EA92B2A781E24002F646B /* Views */,
 			);
@@ -98,6 +127,7 @@
 		528EA9302A781E4A002F646B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				522B0B6C2A85438400680D2A /* Repo */,
 				528EA9312A781E58002F646B /* Entity */,
 			);
 			path = Data;
@@ -135,6 +165,9 @@
 			dependencies = (
 			);
 			name = UserRegister;
+			packageProductDependencies = (
+				522B0B6A2A8542C100680D2A /* RxSwift */,
+			);
 			productName = UserRegister;
 			productReference = 528EA9132A781DD4002F646B /* UserRegister.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 528EA90A2A781DD4002F646B;
+			packageReferences = (
+				522B0B692A8542C100680D2A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 528EA9142A781DD4002F646B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -191,7 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				528EA92D2A781E37002F646B /* UserRegisterViewController.swift in Sources */,
+				522B0B712A85441500680D2A /* HomeViewModel.swift in Sources */,
+				522B0B6E2A8543AC00680D2A /* UsersDaoRepository.swift in Sources */,
+				522B0B752A85444D00680D2A /* UserDetailViewModel.swift in Sources */,
 				528EA92F2A781E3E002F646B /* UserDetailViewController.swift in Sources */,
+				522B0B732A85442F00680D2A /* UserRegisterViewModel.swift in Sources */,
 				528EA91B2A781DD4002F646B /* HomeViewController.swift in Sources */,
 				52FDFAD72A7C100F001A5ABE /* UsersTableViewCell.swift in Sources */,
 				528EA9172A781DD4002F646B /* AppDelegate.swift in Sources */,
@@ -414,6 +454,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		522B0B692A8542C100680D2A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		522B0B6A2A8542C100680D2A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 522B0B692A8542C100680D2A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 528EA90B2A781DD4002F646B /* Project object */;
 }
