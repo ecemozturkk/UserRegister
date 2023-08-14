@@ -12,7 +12,7 @@ class UserRegisterViewModel {
     var krepo = UsersDaoRepository()
     
     func registerUser (user_name: String, user_tel: String) {
-        krepo.registerUser(user_name: user_name, user_tel: user_tel)
+        krepo.kisileriYukle(kisi_ad: user_name, kisi_tel: user_tel)
         
     }
     

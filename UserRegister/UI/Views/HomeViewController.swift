@@ -60,8 +60,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let user = kisilerListesi[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell") as! UsersTableViewCell
-        cell.lblUserName.text = user.kisi_ad
-        cell.lblUserPhone.text = user.kisi_tel
+        cell.lblUserPhone.text = user.kisi_ad
+        cell.lblUserName.text = user.kisi_tel
         return cell
     }
     
